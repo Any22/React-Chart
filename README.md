@@ -1,7 +1,5 @@
-# Average Rainfall Charts
-### A simple React application to visualize the average rainfall data of 5 months using Chart.js
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Average Rainfall Charts
+A simple React application to visualize the average rainfall data of 5 months using Chart.js
 
 ## Available Scripts
 
