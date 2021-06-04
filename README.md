@@ -59,6 +59,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Commands
+ git remote add origin https://github.com/Any22/React-Chart.git
+git push -u origin master
+
 
 ### Deployment
 
