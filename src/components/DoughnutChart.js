@@ -1,16 +1,15 @@
 import React from 'react'
-import {Bar} from 'react-chartjs-2';
-
+import { Doughnut } from 'react-chartjs-2';
 const state = {
   labels: ['January', 'February', 'March',
            'April', 'May'],
   datasets: [
     {
       label: 'Rainfall',
-      fill:true,
-    //   lineTension:0.5,
+      fill:false,
+    lineTension:0.5,
       backgroundColor:[ 
-        'rgba(75,192,192,1)',
+        'rgba(75, 192, 192, 1)',
         'rgba(54, 162, 235, 1)',
         'rgba(255, 206, 86, 1)',
         'rgba(75, 192, 192, 1)',
@@ -22,25 +21,25 @@ const state = {
     }
   ]
 }
-const BarChart = () => {
+
+const DoughnutChart = () => {
     return (
         <div>
-          <Bar 
+           <Doughnut
             data={state}
             options={{
             title:{
-              display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
+                display:true,
+                text:'Average rainfall per month',
+                fontSize:20
             },
             legend:{
-              display:true,
-              position:'right'
-            }
-          }}
-          />  
+                display:true,
+                position:'right'
+            },
+            }}
+           /> 
         </div>
     )
 }
-
-export default BarChart;
+export default DoughnutChart;

@@ -1,73 +1,31 @@
 import React from 'react';
-import BarChart from './BarChart';
+import BarChart from './components/BarChart'
+import DoughnutChart from './components/DoughnutChart';
+import LineChart from './components/LineChart';
+import PieChart from './components/PieChart';
 // git remote add origin https://github.com/Any22/React-Chart.git
-// git branch -M main
-// git push -u origin main
+// git push -u origin master
 
 function App() {
   return (
-      <>
+    <>
       <div className="bar-chart">
         <h3>Bar Chart</h3>
          <BarChart/>
-{/* 
       </div>
-      <div>
+      <div className="line-chart">
         <h3>Line Chart</h3>
-      <Line 
-      data={state}
-          options={{
-            title:{
-              display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
-            },
-            legend:{
-              display:true,
-              position:'right'
-            }
-          }}
-      />
+         <LineChart/>
       </div>
-      <div>
-       <h3>Pie Chart</h3> 
-       <Pie
-          data={state}
-          options={{
-            title:{
-              display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
-            },
-            legend:{
-              display:true,
-              position:'right'
-            }
-          }}
-        />
-
+      <div className="Pie-chart">
+        <h3>Pie Chart</h3>
+         <PieChart/>
       </div>
-      <div>
-        <h3>
-          Doughnut Chart
-        </h3>
-        <Doughnut
-        data={state}
-        options={{
-          title:{
-            display:true,
-            text:'Average rainfall per month',
-            fontSize:20
-          },
-          legend:{
-            display:true,
-            position:'right'
-          },
-        }}
-        colors={['#a8e0ff', '#8ee3f5', '#70cad1', '#3e517a', '#b08ea2', '#BBB6DF']}
-        /> */} 
+      <div className="Doughnut-chart">
+        <h3>Doughnut Chart</h3>
+         <DoughnutChart/>
       </div>
-      </>
-    );
-  }
+    </>
+  ); 
+}
 export default App;
