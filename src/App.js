@@ -3,8 +3,6 @@ import BarChart from './components/BarChart'
 import DoughnutChart from './components/DoughnutChart';
 import LineChart from './components/LineChart';
 import PieChart from './components/PieChart';
-// git remote add origin https://github.com/Any22/React-Chart.git
-// git push -u origin master
 
 function App() {
   return (
